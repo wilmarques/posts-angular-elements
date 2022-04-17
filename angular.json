@@ -111,6 +111,29 @@
           }
         }
       }
+    },
+    "heroes-visualizer": {
+      "projectType": "library",
+      "root": "projects/heroes-visualizer",
+      "sourceRoot": "projects/heroes-visualizer/src",
+      "prefix": "hv",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/heroes-visualizer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/heroes-visualizer/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/heroes-visualizer/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   },
   "defaultProject": "heroes-creator"

@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
         {{ hero }}
       </li>
     </ul>
+    <hv-heroes-visualizer></hv-heroes-visualizer>
   `,
 })
 export class AppComponent {
